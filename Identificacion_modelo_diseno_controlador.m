@@ -45,10 +45,18 @@ CPIDSerie = Kp*((Ti*s+1)*(Td*s+1))/(s);
 %salida para el modelo de un vehiculo de levitacion magnetica utilizando el método de alfaro
 %ante una entrada escalon unitaria
 Ymalfaro = (Malfaro*CPIDSerie)/(1+Malfaro*CPIDSerie);
+%Para imprimir en ventana la funcion de salida
+num = [Malfaro*CPIDSerie];
+den = [1+Malfaro*CPIDSerie];
+Ymalfaro = tf(num,den)
 
 %salida para el modelo de un vehiculo de levitacion magnetica utilizando el método de chidambaram
 %ante una entrada escalon unitaria
 Ymchidambram = (Mchidambram*CPIDSerie)/(1+Mchidambram*CPIDSerie);
+%Para imprimir en ventana la funcion de salida
+num = [Mchidambram*CPIDSerie];
+den = [1+Mchidambram*CPIDSerie];
+Ymchidambram = tf(num,den)
 
 
 figure(1)
