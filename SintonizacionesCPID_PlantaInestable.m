@@ -1,8 +1,12 @@
 %Con lo que respecta a este aspecto, una vez identificado el modelo
 %equivalente el cual debe ser controlado se analiza su comportamiento ante
-%distintos controladores se detallan en la referencia: .  O.  O'Dwyer,  Handbook  of  PI  and 
-% PID  controller  tuning  rules,  3rd  ed,Londres: Imperial College Press, 
-% pp. 440-480, 2017.
+%distintos controladores. Dado que se realizan n cantidad de pruebas mediante distintas reglas
+%(ecuaciones y párametros por diferentes autores) el valor de las contantes va a depender de los metodos 
+% en ********* o bien ^^^^^^^^^^^
+
+%Donde cada sintonización representa a un controlador distinto.
+
+
 
 
 %Para limpiar espacio de trabajo
@@ -23,8 +27,7 @@ P = (1.1331*exp(-0.020*s))/(0.0274*s-1);
 %Se analizan los controladores PID mediante 3 diferentes reglas de
 %sintonización:
 
-%Método 1 en la bibliografia seccion 4.10.2 
-%Parámetros encontrados mediante la regla Valentine y Chimdambaram pagina
+%Método 1 en la bibliografia seccion *********
 %448
 K1 = 1.110591192;
 Ti1 =  0.30056;
@@ -35,14 +38,13 @@ Td1 = 0.0120224;
 C1 = K1*(1 + 1/Ti1*s + Td1*s);
 
 
-%salida para el modelo de un vehiculo de levitacion magnetica utilizando regla Valentine y Chimdambaram 
+%salida para el modelo de un vehiculo de levitacion magnetica utilizando regla ********* 
 %ante una entrada escalon unitaria
 Y1 = (P*C1)/(1+P*C1);
 
 
-%Método 2 en la bibliografia seccion 4.10.3
-%Segun la bibliografia se llama  Ideal controller in 
-% series with a first order lag
+%Método 2 en la bibliografia ^^^^^^^^^^^
+
 K2 =  1.325321817;
 Ti2 = 0.3545485361;
 Td2 = 0.01;
@@ -53,19 +55,11 @@ Tf= 0.00255642;
 C2 =  K2*(1 + 1/Ti2*s + Td2*s)*(1/(Tf*s+1));
 
 
-%salida para el modelo de un vehiculo de levitacion magnetica utilizando regla Valentine y Chimdambaram 
+%salida para el modelo de un vehiculo de levitacion magnetica utilizando regla ^^^^^^^^^^^ 
 %ante una entrada escalon unitaria
 Y2 = (P*C2)/(1+P*C2);
 
 
-%Método 3 en la bibliografia seccion 4.10.6 según al bibliografía
-%Two degree of freedom controller 1
-K3 = 1.570602494;
-Ti3 = 0.0142747157;
-Td3 = 0.0114915; 
-B = 1;
-a = 0.3137;
-%Con N infinito
 
 
 %graficando la respuesta a una entrada escalon unitaria 
