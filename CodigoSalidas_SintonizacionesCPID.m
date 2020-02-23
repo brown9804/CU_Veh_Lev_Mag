@@ -1,6 +1,6 @@
 %Función:       Ver la salida del sistema utilizando con controlador PID con distintos valores, dado que la 
 %               idea es compararlos se colocan todos bajo la misma cuadrícula de gráfica. Esto mismo se realizará bajo 
-%               la plataforma de simulink bajo el nombre Bloques_SintonizacionesCPID.slx con el fin 
+%               la plataforma de simulink bajo el nombre Bloques_Salida_Esfuerzo_SintonizacionesCPID.slx con el fin 
 %               de ver la simulitud entre los resultados. 
 
 
@@ -78,17 +78,6 @@ hold on
 step(Y2);
 hold on
 legend('Modelo 1 evaluado ','Modelo 2 evaluado')
-
-
-
-
-
-
-
-
-
-
-
 
 
 
