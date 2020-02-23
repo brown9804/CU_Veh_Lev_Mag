@@ -5,6 +5,9 @@
 %acordes a las caracteristicas respecto a forma y parametros de la funcion que asimila el comportamiento
 %de la planta que nos solicitaron controlar.
 
+%VALORES PARA LOS PARAMETROS DEL CONTROLADOR OBTENIDOS DE MANERA EXPERIMETAL
+%ES CUANDO EL CONTROLADOR SE STABILIZA MEDIANTE PRUBEAS SUCEDIVAS EN MATLAB 
+%CON VALORES ESCOGIDOSREITERAMENTE
 
 
 
