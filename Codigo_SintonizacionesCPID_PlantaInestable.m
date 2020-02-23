@@ -1,3 +1,10 @@
+%Función:       Ver la salida del sistema utilizando con controlador PID con distintos valores, dado que la 
+%               idea es compararlos se colocan todos bajo la misma cuadrícula de gráfica. Esto mismo se realizará bajo 
+%               la plataforma de simulink bajo el nombre Bloques_SintonizacionesCPID_PlantaInestable.m con el fin 
+%               de ver la simulitud entre los resultados. 
+
+
+
 %Con lo que respecta a este aspecto, una vez identificado el modelo
 %equivalente el cual debe ser controlado se analiza su comportamiento ante
 %distintos controladores. Dado que se realizan n cantidad de pruebas mediante distintas reglas
