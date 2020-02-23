@@ -73,16 +73,12 @@ Y2 = (P*C2)/(1+P*C2);
 figure(1)
 step(Y1);
 hold on
-%en ventanas separadas
-grid
 
 
-%graficando la respuesta a una entrada escalon unitaria 
-figure(2)
 step(Y2);
 hold on
-%en ventanas separadas
-grid
+
+
 
 
 
