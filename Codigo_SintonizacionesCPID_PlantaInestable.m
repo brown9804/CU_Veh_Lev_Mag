@@ -77,6 +77,9 @@ hold on
 
 step(Y2);
 hold on
+legend('Modelo 1 evaluado ','Modelo 2 evaluado')
+
+
 
 
 
